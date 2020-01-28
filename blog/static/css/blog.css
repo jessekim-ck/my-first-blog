@@ -1,0 +1,71 @@
+
+.app-container {
+    padding: 48px 10%;
+}
+
+.post-item {
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.post-item .title a {
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.post-detail .description {
+    color: grey;
+    font-size: 18px;
+}
+
+.post-detail .body {
+    margin-top: 24px;
+    
+    word-break: keep-all;
+    word-wrap: normal;
+}
+
+.auth-form {
+    text-align: center;
+}
+
+.auth-form .title {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.auth-form .form-container {
+    margin: 48px 0 24px 0;
+}
+
+.form-container .text-form {
+    border-radius: 100px;
+    border: 1px solid grey;
+    padding: 4px 12px;
+    margin-bottom: 18px;
+    width: 280px;
+    height: 40px;
+    text-align: center;
+}
+
+.auth-form .button {
+    border-radius: 100px;
+    border: 1px solid #343a40;
+    padding: 4px 12px;
+    margin-bottom: 18px;
+    width: 280px;
+    height: 40px;
+    text-align: center;
+    background-color: #343a40;
+    color: white;
+}
+
+
+.navbar {
+    padding: 14px 10%;
+}
+
+

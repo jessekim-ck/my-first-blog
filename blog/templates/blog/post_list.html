@@ -1,0 +1,15 @@
+{% extends 'blog/base.html' %}
+
+{% block body %}
+    <div>
+        {% for post in post_list %}
+            <div class="post-item">
+                <div class="title">
+                    <a href="{% url 'path_post_detail' pk=post.id %}">{{ post.title }}</a>
+                </div>
+                <p>{{ post.published_date }}</p>
+                <p>{{ post.text }}</p>
+            </div>
+        {% endfor %}    
+    </div>
+{% endblock %}
