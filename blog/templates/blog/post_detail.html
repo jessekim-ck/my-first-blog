@@ -24,7 +24,13 @@
         ).replace(
             // 문단의 끝을 인식하여 처리해줍니다.
             /$/gm, "  "
-        );
+        ).replace(
+            // **로 감싸진 텍스트를 파싱한다. Greedy detection.
+            /\*{2}([^\*]+?)\*{2}/gi, "<strong>$1</strong>"
+        ).replace(
+            // *로 감싸진 텍스트를 파싱한다. Greedy detection.
+            /\*{1}([^\*]+?)\*{1}/gi, "<em>$1</em>"
+        )
         
         body.innerHTML = marked(body.innerHTML);
         
