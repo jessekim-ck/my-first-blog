@@ -80,13 +80,13 @@
             window.addEventListener("keyup", control_up);
 
             function control_down(event) {
-                if (event.key === "Control") {
+                if (event.key === "Meta") {
                     window.addEventListener("keydown", key_down);
                 }
             }
 
             function control_up(event) {
-                if (event.key === "Control") {
+                if (event.key === "Meta") {
                     window.removeEventListener("keydown", key_down);
                 }
             }
